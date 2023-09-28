@@ -13,3 +13,15 @@ class User(db.Model, SerializerMixin):
 
     def __repr__(self):
         return f'<User {self.username}>'
+    
+class City(db.Model, SerializerMixin):
+    __tablename__ = 'cities'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(120), nullable=False)
+    date_of_visit = db.Column(db.Date, nullable=False)
+    best_memories = db.Column(db.Text, nullable=False)
+    accomodation = db.Column(db.String(120), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullalbe=False)
+
+    def __repr__(self):
+        return f'<City {self.name}>'
