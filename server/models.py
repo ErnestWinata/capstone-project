@@ -25,3 +25,8 @@ class City(db.Model, SerializerMixin):
 
     def __repr__(self):
         return f'<City {self.name}>'
+    
+user_city_association = db.Table('user_city',
+    db.Column('user_id', db.Integer, db.ForeignKey('users.id'), primary_key=True),
+    db.Column('city_id', db.Integer, db.ForeignKey('cities.id'), primary_key=True)
+)
