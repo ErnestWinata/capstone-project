@@ -1,21 +1,15 @@
 #!/usr/bin/env python3
 
-# Standard library imports
 
-# Remote library imports
-from flask import request
-from flask_restful import Resource
-
-# Local imports
-from config import app, db, api
-# Add your model imports
+from flask import request, jsonify
+from models import db, City
+from config import app, api
 
 
-# Views go here!
 
-@app.route('/')
-def index():
-    return '<h1>Project Server</h1>'
+@app.route('/cities', methods=['POST'])
+def create_city():
+    pass
 
 
 if __name__ == '__main__':
