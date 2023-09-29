@@ -19,6 +19,10 @@ def get_all_cities():
 def get_city(city_id):
     pass
 
+@app.route('/cities/<int:city_id>', methods=['DELETE'])
+def delete_city(city_id):
+    pass
+
 if __name__ == '__main__':
     app.run(port=5555, debug=True)
 
