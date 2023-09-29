@@ -15,6 +15,10 @@ def create_city():
 def get_all_cities():
     pass
 
+@app.route('/cities/<int:city_id>', methods=['GET'])
+def get_city(city_id):
+    pass
+
 if __name__ == '__main__':
     app.run(port=5555, debug=True)
 
