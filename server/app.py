@@ -11,6 +11,9 @@ from config import app, api
 def create_city():
     pass
 
+@app.route('/cities', methods=['GET'])
+def get_all_cities():
+    pass
 
 if __name__ == '__main__':
     app.run(port=5555, debug=True)
