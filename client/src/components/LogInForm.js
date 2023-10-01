@@ -8,9 +8,28 @@ const LoginSchema = Yup.object().shape({
 });
 
 function LoginForm() {
-  const handleSubmit = (values, { setSubmitting }) => {
-    console.log('Form values:', values);
-    setSubmitting(false);
+  const handleSubmit = async (values, { setSubmitting }) => {
+    try {
+      const response = await fetch('http://localhost:5000/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log('Login successful!', data);
+        // You can handle successful login here, e.g., redirect the user
+      } else {
+        console.error('Login failed');
+      }
+    } catch (error) {
+      console.error('Login failed:', error);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
