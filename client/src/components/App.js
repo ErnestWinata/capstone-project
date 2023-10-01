@@ -9,12 +9,12 @@ function App() {
   return (
     <Router>
       <div>
-        {/* Define routes */}
+        
         <Switch>
           <Route path="/cities" component={CityList} />
           <Route path="/city/:id" component={CityDetails} />
           <Route path="/login" component={LoginForm} />
-          {/* Add more routes as needed */}
+          
         </Switch>
       </div>
     </Router>
