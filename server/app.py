@@ -1,5 +1,6 @@
 from flask import request, jsonify
 from models import db, City
+from config import app
 
 @app.route('/cities', methods=['POST'])
 def create_city():
@@ -14,7 +15,7 @@ def create_city():
 @app.route('/cities', methods=['GET'])
 def get_all_cities():
     cities = City.query.all()
-    serialized_cities = [city.serialize() for city in cities]  # Assuming a serialize method in your City model
+    serialized_cities = [city.serialize() for city in cities]
     return jsonify(serialized_cities), 200
 
 @app.route('/cities/<int:city_id>', methods=['GET'])
