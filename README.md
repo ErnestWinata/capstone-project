@@ -22,7 +22,7 @@ Some of the features of this app include:
 
 ## Installation
 
-1. Clone the repository: git clone <repository_url>
+1. Clone the repository: git clone https://github.com/ErnestWinata/capstone-project
 
 2. Navigate to the server directory: cd server
 
