@@ -48,6 +48,14 @@ Some of the features of this app include:
 2. Create an account or log in using the provided options.
 3. Add cities you have visited and explore the app's features.
 
+
+## API Endpoints
+
+POST /cities: Create a new city.
+GET /cities: Get a list of all cities.
+GET /cities/<city_id>: Get details of a specific city.
+DELETE /cities/<city_id>: Delete a city.
+
 ```console
 $ tree -L 2
 $ # the -L argument limits the depth at which we look into the directory structure
