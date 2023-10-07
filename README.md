@@ -5,10 +5,20 @@
 Travel App is a web application that allows users to record and explore their travel experiences.
 
 
-
 ## Overview
 
 Travel App is designed to help users keep track of their travel memories, including visited cities, best experiences, and accommodation details. Users can also connect with other travelers and share their travel stories.
+
+
+## Features
+
+Some of the features of this app include:
+
+- User Authentication: Users can log in to the application.
+- City Creation: Users can create entries for cities they have visited.
+- City Listing: Users can view a list of cities they have added.
+- City Details: Users can view details of a specific city, including best memories and accommodation.
+
 
 ```console
 $ tree -L 2
