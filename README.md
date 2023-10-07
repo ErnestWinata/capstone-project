@@ -20,6 +20,23 @@ Some of the features of this app include:
 - City Details: Users can view details of a specific city, including best memories and accommodation.
 
 
+## Installation
+
+1. Clone the repository: git clone <repository_url>
+
+2. Navigate to the server directory: cd server
+
+3. Install backend dependencies: pip install -r requirements.txt
+
+4. Set up the database:
+Create a database (e.g., SQLite): python manage.py db init
+Migrate the database: python manage.py db migrate
+Apply the migrations: python manage.py db upgrade
+Run the backend server: python app.py
+Navigate to the client directory: cd client
+Install frontend dependencies: npm install
+Run the frontend server: npm start
+
 ```console
 $ tree -L 2
 $ # the -L argument limits the depth at which we look into the directory structure
