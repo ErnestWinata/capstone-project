@@ -4,13 +4,11 @@
 
 Travel App is a web application that allows users to record and explore their travel experiences.
 
----
 
-## Introduction
 
-Fork and clone this lesson for a template for your full-stack application. Take
-a look at the directory structure before we begin (NOTE: node_modules will be
-generated in a subsequent step):
+## Overview
+
+Travel App is designed to help users keep track of their travel memories, including visited cities, best experiences, and accommodation details. Users can also connect with other travelers and share their travel stories.
 
 ```console
 $ tree -L 2
