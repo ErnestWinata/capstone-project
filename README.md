@@ -52,9 +52,19 @@ Some of the features of this app include:
 ## API Endpoints
 
 POST /cities: Create a new city.
+
 GET /cities: Get a list of all cities.
+
 GET /cities/<city_id>: Get details of a specific city.
+
 DELETE /cities/<city_id>: Delete a city.
+
+
+## Tools and Libraries Used
+
+- Flask: Web application framework for the backend.
+- React: JavaScript library for building the frontend user interface.
+- SQLAlchemy: SQL toolkit and Object-Relational Mapping (ORM) for Python.
 
 ```console
 $ tree -L 2
