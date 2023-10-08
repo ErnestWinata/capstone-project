@@ -6,7 +6,7 @@ from config import app
 def create_city():
     data = request.json
     new_city = City(name=data['name'], date_of_visit=data['date_of_visit'],
-                    best_memories=data['best_memories'], accomodation=data['accomodation'],
+                    best_memories=data['best_memories'], accommodation=data['accommodation'],
                     user_id=data['user_id'])
     db.session.add(new_city)
     db.session.commit()
