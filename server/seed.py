@@ -1,17 +1,28 @@
-#!/usr/bin/env python3
 
-# Standard library imports
-from random import randint, choice as rc
-
-# Remote library imports
 from faker import Faker
-
-# Local imports
 from app import app
-from models import db
+from models import 
 
-if __name__ == '__main__':
+def seed_data():
     fake = Faker()
     with app.app_context():
-        print("Starting seed...")
-        # Seed code goes here!
+        
+        for _ in range(10):
+            city = City(
+                name=fake.city(),
+                date_of_visit=fake.date_this_decade(),
+                best_memories=fake.text(),
+                accommodation=fake.company()
+            )
+            db.session.add(city)
+
+        
+        db.session.commit()
+
+        print("Data seeding completed.")
+
+if __name__ == '__main__':
+    print("Starting seed...")
+    seed_data()
+
+        
