@@ -1,7 +1,7 @@
 
 from faker import Faker
 from app import app
-from models import 
+from models import db, City
 
 def seed_data():
     fake = Faker()
