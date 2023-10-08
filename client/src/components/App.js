@@ -13,7 +13,7 @@ function App() {
         
         <Switch>
           <Route path="/cities" component={CityList} />
-          {/* <Route path="/city/:id" component={CityDetails} /> */}
+          <Route path="/city/:id" component={CityDetails} />
           <Route path="/login" component={LoginForm} />
           
         </Switch>
