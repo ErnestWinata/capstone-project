@@ -5,7 +5,7 @@ function CityList() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/cities')
+    fetch('http://localhost:5555/cities')
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch cities');
@@ -38,4 +38,5 @@ function CityList() {
 }
 
 export default CityList;
+
 

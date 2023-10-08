@@ -10,7 +10,7 @@ const LoginSchema = Yup.object().shape({
 function LoginForm() {
   const handleSubmit = async (values, { setSubmitting }) => {
     try {
-      const response = await fetch('http://localhost:5000/login', {
+      const response = await fetch('http://localhost:5555/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -21,7 +21,7 @@ function LoginForm() {
       if (response.ok) {
         const data = await response.json();
         console.log('Login successful!', data);
-        // You can handle successful login here, e.g., redirect the user
+        
       } else {
         console.error('Login failed');
       }
