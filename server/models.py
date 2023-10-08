@@ -30,7 +30,7 @@ class City(db.Model, SerializerMixin):
     name = db.Column(db.String, nullable=False)
     date_of_visit = db.Column(db.Date, nullable=False)
     best_memories = db.Column(db.Text, nullable=False)
-    accomodation = db.Column(db.String, nullable=False)
+    accommodation = db.Column(db.String, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 
     def __repr__(self):
